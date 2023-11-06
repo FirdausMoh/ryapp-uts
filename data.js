@@ -8,6 +8,8 @@ const data = [
       "Semen Gresik ",
     image:
       "https://cf.shopee.co.id/file/719610b55c6505eed41a5b48ed5ee0c5",
+    desc:
+    "hkjgkav",
     content: content,
   },
   {

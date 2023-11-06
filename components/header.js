@@ -39,6 +39,9 @@ const Header = ({ title, withBack = false }) => {
           </HStack>
         </HStack>
       </Box>
+      <Box>
+        
+      </Box>
     </SafeAreaView>
   );
 };

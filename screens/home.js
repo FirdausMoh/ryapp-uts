@@ -31,6 +31,11 @@ const HomeScreen = () => {
               {item.title}
             </Heading>
           </Box>
+          <Box flex={4}>
+            <Heading lineHeight={"md"} fontSize={"md"}>
+              {item.desc}
+            </Heading>
+          </Box>
         </Box>
       </TouchableOpacity>
     );

@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { NativeBaseProvider, Text, } from "native-base";
 import { Ionicons } from '@expo/vector-icons';
-import Home from "./screens/home";
 import Login from "./screens/login";
 import Profile from "./screens/profile"
 import EditProfile from "./screens/edit-profile";
@@ -17,7 +16,6 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const noHead = { headerShown: false };
-const noTabs = { Tabshown: false };
 
 const Tabs = () => {
   return (
@@ -28,9 +26,6 @@ const Tabs = () => {
           switch (route.name) {
             case "Home":
               iconName = "home-outline";
-              break;
-            case "EditProfile":
-              iconName = "videocam-outline";
               break;
             case "Pembelian":
               iconName = "share";
@@ -64,7 +59,6 @@ const Tabs = () => {
         },
       })}
     >
-      <Tab.Screen name="Login" component={Login} options={noHead} />
       <Tab.Screen name="Home" component={HomeScreen} options={noHead} />
       <Tab.Screen name="Category" component={Category} options={noHead} />
       <Tab.Screen name="Pembelian" component={Pembelian} options={noHead} />
@@ -81,8 +75,8 @@ const App = () => {
         <Stack.Navigator>
           <Stack.Screen name="Tabs" component={Tabs} options={noHead} />
           <Stack.Screen
-            name="EditProfile"
-            component={EditProfile}
+            name="Login"
+            component={Login}
             options={noHead}
           />
         </Stack.Navigator>

@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Box, Text, Heading, VStack, FormControl, Input, Link, Button, HStack, Center, NativeBaseProvider } from "native-base";
+import { Box, Text, Heading, VStack, FormControl, Input, Button, HStack, Center, NativeBaseProvider } from "native-base";
 
-const Example = () => {
+const Login = () => {
   return <Center w="100%">
       <Box safeArea p="2" py="8" w="90%" maxW="290">
         <Heading size="lg" fontWeight="600" color="coolGray.800" _dark={{
@@ -42,7 +42,7 @@ const Example = () => {
         return (
           <NativeBaseProvider>
             <Center flex={1} px="3">
-                <Example />
+                <Login />
             </Center>
           </NativeBaseProvider>
         );
