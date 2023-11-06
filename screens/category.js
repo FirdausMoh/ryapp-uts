@@ -1,58 +1,114 @@
-import { Heading, FlatList, Image, Text, Box , ScrollView} from "native-base";
+import { Heading, FlatList, Image, Text, Box , ScrollView,View, Center} from "native-base";
 import { Header } from "../components";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
-import datac from "../datac";
 
-const CategoryScreen = () => {
+const Category = () => {
   const navigation = useNavigation();
-
-  const renderitem = ({ item }) => {
-    return (
-      <TouchableOpacity
-        activeOpacity={0.5}
-        onPress={() => navigation.navigate("CategoryDetail", { item: item })}
-      >
-        <Box
-          p={"3"}
-          flexDirection="row"
-          flex={1}
-          borderWidth={'1'}
-        >
-          <Box flex={2} mr={"4"}>
-            <Image
-              source={{ uri: item.image }}
-              w="100"
-              h="100"
-              alt="Image Data"
-            />
-          </Box>
-          <Box flex={4}>
-            <Heading lineHeight={"md"} fontSize={"md"}>
-              {item.title}
-            </Heading>
-          </Box>
-        </Box>
-      </TouchableOpacity>
-      
-    );
-  };
-
-  
   return (
     <>
-    <ScrollView>
-    <Header title={"Subur Jaya Store"}/>
-     <Heading marginBottom={'3.5'}>List Category</Heading>
-    <FlatList
-        data={datac}
-        renderItem={renderitem}
-        keyExtractor={(item) => item.id}
-        showsVerticalScrollIndicator={false}
-    />
-    </ScrollView> 
-    </>
-  );
-};
+    <View>
+    <Header title={"Category Items"}  />
+    </View>
+    <Box>
+      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={false}>
+        <TouchableOpacity
+        onPress={() =>
+        navigation.navigate("Semen")}>
+          <Box marginLeft={'20px'} marginRight={'35px'}>
+          <Image
+                source={require ("../assets/semen.jpg")}
+                w="140"
+                h="140"
+                alt="Logo"
+                borderRadius={30}
+            />
+            <Center>
+            <Text color={"gray.600"} marginTop={1} marginBottom={2} fontSize={18}>Pilihan Semen</Text>
+            </Center>
+           
+          </Box>  
+        </TouchableOpacity>
+        <TouchableOpacity 
+        onPress={() =>
+        navigation.navigate("Cat")}>
+          <Box marginLeft={3}>
+          <Image
+                source={require ("../assets/cat.png")}
+                w="140"
+                h="140"
+                alt="Logo"
+                borderRadius={30}
+            />
+          <Center>
+          <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Pilihan Cat</Text>
+          </Center> 
+          </Box>  
+        </TouchableOpacity>     
+    </ScrollView>
+    </Box>
+    
+    <Box marginTop={0}>
+      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={false}>
+        <TouchableOpacity
+        onPress={() =>
+        navigation.navigate("Bata")}>
+          <Box marginLeft={'20px'} marginRight={'35px'}>
+          <Image
+                source={require ("../assets/bata.webp")}
+                w="140"
+                h="140"
+                alt="Logo"
+                borderRadius={30}
+            />
+            <Center>
+            <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Pilihan Bata</Text>
+            </Center>
+           
+          </Box>  
+        </TouchableOpacity>
+        <TouchableOpacity 
+        onPress={() =>
+        navigation.navigate("Galvalum")}>
+          <Box marginLeft={3}>
+          <Image
+                source={require ("../assets/galvalum.png")}
+                w="140"
+                h="140"
+                alt="Logo"
+                borderRadius={30}
+            />
+          <Center>
+          <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Pilihan Galvalum</Text>
+          </Center> 
+          </Box>  
+        </TouchableOpacity>
+      </ScrollView>
+    </Box>
+    
+    <Box>
+      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={false}>
+        <TouchableOpacity
+        onPress={() =>
+        navigation.navigate("Product")}>
+          <Box marginLeft={'20px'} marginRight={'35px'}>
+          <Image
+                source={require ("../assets/other.png")}
+                w="140"
+                h="140"
+                alt="Logo"
+                borderRadius={30}
+            />
+            <Center>
+            <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Others</Text>
+            </Center>  
+          </Box>  
+        </TouchableOpacity>
 
-export default CategoryScreen;
+      </ScrollView>
+    </Box>
+    </>
+    );
+}
+
+export default Category;

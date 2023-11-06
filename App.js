@@ -8,7 +8,11 @@ import Profile from "./screens/profile"
 import Pembelian from "./screens/form-pembelian";
 import HomeScreen from "./screens/home";
 import Category from "./screens/category";
-import CategoryDetail from "./screens/categorydetail";
+import Semen from "./screens/Semen";
+import Cat from "./screens/Cat";
+import Galvalum from "./screens/Galvalum";
+import Bata from "./screens/Bata";
+import Product from "./screens/Product";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -80,8 +84,28 @@ const App = () => {
             options={noHead}
           />
           <Stack.Screen
-            name="CategoryDetail"
-            component={CategoryDetail}
+            name="Semen"
+            component={Semen}
+            options={noHead}
+          />
+          <Stack.Screen
+            name="Cat"
+            component={Cat}
+            options={noHead}
+          />
+          <Stack.Screen
+            name="Galvalum"
+            component={Galvalum}
+            options={noHead}
+          />
+          <Stack.Screen
+            name="Bata"
+            component={Bata}
+            options={noHead}
+          />
+          <Stack.Screen
+            name="Product"
+            component={Product}
             options={noHead}
           />
         </Stack.Navigator>
