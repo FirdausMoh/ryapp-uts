@@ -5,10 +5,10 @@ import { NativeBaseProvider, Text, } from "native-base";
 import { Ionicons } from '@expo/vector-icons';
 import Login from "./screens/login";
 import Profile from "./screens/profile"
-import EditProfile from "./screens/edit-profile";
 import Pembelian from "./screens/form-pembelian";
 import HomeScreen from "./screens/home";
 import Category from "./screens/category";
+import CategoryDetail from "./screens/categorydetail";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -79,7 +79,13 @@ const App = () => {
             component={Login}
             options={noHead}
           />
+          <Stack.Screen
+            name="CategoryDetail"
+            component={CategoryDetail}
+            options={noHead}
+          />
         </Stack.Navigator>
+        
       </NavigationContainer>
     </NativeBaseProvider>
   );
