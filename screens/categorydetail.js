@@ -2,10 +2,11 @@ import { Heading, FlatList, Image, Text, Box , ScrollView} from "native-base";
 import { Header } from "../components";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
-import datac from "../datac";
+import datacsemen from "../datacsemen";
 
-const CategoryScreen = () => {
+const CategoryDetail = ({ route }) => {
   const navigation = useNavigation();
+  const params = route.params.item;
 
   const renderitem = ({ item }) => {
     return (
@@ -42,10 +43,9 @@ const CategoryScreen = () => {
   return (
     <>
     <ScrollView>
-    <Header title={"Subur Jaya Store"}/>
-     <Heading marginBottom={'3.5'}>List Category</Heading>
+    <Header title={params.title}/>
     <FlatList
-        data={datac}
+        data={datacsemen}
         renderItem={renderitem}
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
@@ -55,4 +55,4 @@ const CategoryScreen = () => {
   );
 };
 
-export default CategoryScreen;
+export default CategoryDetail;
