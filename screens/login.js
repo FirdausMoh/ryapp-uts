@@ -27,7 +27,7 @@ const Login = () => {
             <Input type="password" />
           </FormControl>
           <Button mt="2"  onPress={() => navigation.navigate("Home")} backgroundColor={"red.600"}>
-            <Text color={"white"}>Sign in</Text>
+            <Text color={"white"}>Login</Text>
           </Button>
           <HStack mt="6" justifyContent="center">
             <Text fontSize="sm" color="coolGray.600" _dark={{
