@@ -26,7 +26,6 @@ const Category = () => {
             <Center>
             <Text color={"gray.600"} marginTop={1} marginBottom={2} fontSize={18}>Pilihan Semen</Text>
             </Center>
-           
           </Box>  
         </TouchableOpacity>
         <TouchableOpacity 
