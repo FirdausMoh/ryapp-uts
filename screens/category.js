@@ -99,7 +99,7 @@ const Category = () => {
                 borderRadius={30}
             />
             <Center>
-            <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Others</Text>
+            <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Semua</Text>
             </Center>  
           </Box>  
         </TouchableOpacity>

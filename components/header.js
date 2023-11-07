@@ -15,7 +15,6 @@ const Header = ({ title, withBack = false }) => {
       <Box bg={"white"} p={"4"}>
         <HStack justifyContent="space-between" alignItems="center">
           <HStack alignItems="center">
-            {!withBack ? (
               <>
                 <Image
                 source={require ("../assets/RYPOS.png")}
@@ -25,17 +24,7 @@ const Header = ({ title, withBack = false }) => {
                 resizeMode="contain"
                 />
               </>
-            ) : (
-              <TouchableOpacity
-                activeOpacity={0.5}
-                onPress={() => navigation.goBack()}
-              >
-                <Box mr={"3"}>
-                  <Ionicons name="arrow-back-outline" size={32} color="white" />
-                </Box>
-              </TouchableOpacity>
-            )}
-            <Heading color={"red.600"}>{title}</Heading>
+            <Heading color={"red.500"} marginLeft={10}>{title}</Heading>
           </HStack>
         </HStack>
       </Box>

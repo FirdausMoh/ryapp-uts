@@ -4,28 +4,67 @@ const content =
 const data = [
   {
     id: 1,
+    category:
+    "Semen",
     title:
-      "Semen Gresik ",
+      "Semen Gresik 20 KG ",
     image:
       "https://cf.shopee.co.id/file/719610b55c6505eed41a5b48ed5ee0c5",
-    desc:
-    "hkjgkav",
+    Price:"Rp 10.000",
     content: content,
   },
   {
     id: 2,
-    title: "Nippon Paint Matex",
+    category:
+    "Cat",
+    title: "Nippon Paint Matex 20L",
     image:
       "https://deposemut.com/wp-content/uploads/2020/10/Untitled-1-01.png",
+    Price: "Rp 10.000",
     content: content,
   },
   {
     id: 3,
-    title: "Bata Ringan/Hebel AAC alfa Min",
+    category:
+    "Batu Bata",
+    title: "Bata Ringan/Hebel AAC 10X20X60",
     image:
       "https://cf.shopee.co.id/file/f5583a1203bf5106a7828f0c2814f6e7",
+    Price: "Rp 10.000",
     content: content,
   },
+  {
+    id: 4,
+    category:
+    "Semen",
+    title:
+      "Semen Gresik 50 KG ",
+    image:
+      "https://cf.shopee.co.id/file/719610b55c6505eed41a5b48ed5ee0c5",
+    Price:"Rp 10.000",
+    content: content,
+  },
+  {
+    id: 5,
+    category:
+    "Cat",
+    title: "Nippon Paint Matex 25 L",
+    image:
+      "https://deposemut.com/wp-content/uploads/2020/10/Untitled-1-01.png",
+    Price: "Rp 10.000",
+    content: content,
+  },
+  {
+    id: 6,
+    category:
+    "Batu Bata",
+    title: "Bata Ringan/Hebel AAC 10X20X90",
+    image:
+      "https://cf.shopee.co.id/file/f5583a1203bf5106a7828f0c2814f6e7",
+    Price: "Rp 10.000",
+    content: content,
+  },
+  
 ];
 
 export default data;
