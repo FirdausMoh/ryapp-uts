@@ -25,6 +25,7 @@ const noHead = { headerShown: false };
 const Tabs = () => {
   return (
     <Tab.Navigator
+    initialRouteName="Home"
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color }) => {
           let iconName;

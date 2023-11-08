@@ -1,4 +1,4 @@
-import { Heading, FlatList, Image, Text, Box , ScrollView,View, Center} from "native-base";
+import { Heading, FlatList, Image, Text, Box , ScrollView,View, Center, VStack, HStack} from "native-base";
 import { Header } from "../components";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
@@ -8,18 +8,22 @@ const Category = () => {
   return (
     <>
     <View>
-    <Header title={"Category Items"}  />
+    <Header/>
     </View>
-    <Box>
-      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={false}>
+    <VStack>
+      <ScrollView>
+      <Box>
+      <Heading ml={5} mb={4}>Kategori Barang</Heading>
+      
+      <HStack>
         <TouchableOpacity
         onPress={() =>
         navigation.navigate("Semen")}>
-          <Box marginLeft={'20px'} marginRight={'35px'}>
+          <Box mr={'80px'} ml={'55px'}>
           <Image
                 source={require ("../assets/semen.jpg")}
-                w="140"
-                h="140"
+                w="130"
+                h="130"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -34,8 +38,8 @@ const Category = () => {
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/cat.png")}
-                w="140"
-                h="140"
+                w="130"
+                h="130"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -44,19 +48,16 @@ const Category = () => {
           </Center> 
           </Box>  
         </TouchableOpacity>     
-    </ScrollView>
-    </Box>
-    
-    <Box marginTop={0}>
-      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={false}>
+    </HStack>
+    <HStack>
         <TouchableOpacity
         onPress={() =>
         navigation.navigate("Bata")}>
-          <Box marginLeft={'20px'} marginRight={'35px'}>
+          <Box mr={'80px'} ml={'55px'}>
           <Image
                 source={require ("../assets/bata.webp")}
-                w="140"
-                h="140"
+                w="130"
+                h="130"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -72,8 +73,8 @@ const Category = () => {
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/galvalum.png")}
-                w="140"
-                h="140"
+                w="130"
+                h="130"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -82,31 +83,31 @@ const Category = () => {
           </Center> 
           </Box>  
         </TouchableOpacity>
-      </ScrollView>
-    </Box>
-    
-    <Box>
-      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={false}>
+      </HStack>  
+    <HStack>
         <TouchableOpacity
         onPress={() =>
         navigation.navigate("Product")}>
-          <Box marginLeft={'20px'} marginRight={'35px'}>
+          <Box mr={'80px'} ml={'55px'}>
           <Image
                 source={require ("../assets/other.png")}
-                w="140"
-                h="140"
+                w="130"
+                h="130"
                 alt="Logo"
                 borderRadius={30}
             />
             <Center>
-            <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Semua</Text>
+            <Text marginTop={1} color={"gray.600"}  marginBottom={5} fontSize={18}>Semua</Text>
             </Center>  
           </Box>  
         </TouchableOpacity>
-
-      </ScrollView>
+      </HStack>
     </Box>
+    </ScrollView>
+    
+    </VStack>
     </>
+   
     );
 }
 

@@ -8,20 +8,18 @@ const HomeScreen = () => {
   
   return (
     <>
-    <View>
     <Header/>
-    </View>
     <ScrollView>
-    <Box>
+      <VStack>
+      <Box>
         <Image source={require("../assets/baner.jpg")}
         alt="banner"
         w="full"
-        h="full"
+        h="200"
         resizeMode="contain"
         />
-    </Box>
-    <VStack>
-    <Box>
+      </Box>
+      <Box>
       <HStack>
       <Text marginTop={'3.5'} marginLeft={3} marginBottom={5} fontSize={20}>
     Apa Yang Anda Cari ?
@@ -34,9 +32,8 @@ const HomeScreen = () => {
       </HStack>
     
     </Box>
-    </VStack>
     <Box>
-      <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={true}>
+    <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={true}>
           <Box marginLeft={3}>
           <Image
                 source={require("../assets/dinding.jpg")}
@@ -49,7 +46,6 @@ const HomeScreen = () => {
           <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Dinding</Text>
           </Center> 
           </Box>   
-
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/atap.jpg")}
@@ -62,7 +58,6 @@ const HomeScreen = () => {
           <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Atap</Text>
           </Center> 
           </Box>  
-
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/cat.jpg")}
@@ -75,7 +70,6 @@ const HomeScreen = () => {
           <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Cat</Text>
           </Center> 
           </Box>  
-
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/lain.jpg")}
@@ -89,15 +83,55 @@ const HomeScreen = () => {
           </Center> 
           </Box>  
       </ScrollView>
-    <VStack>
+      </Box>
       <Center>
-      <Box>
-          <Heading color={"red.500"}fontSize={18}>#ApaAjaAda</Heading>
+      <Box backgroundColor={'rose.300'}>
+          <Center marginTop={5} marginBottom={5}>
+            <Text fontWeight={'semibold'} fontSize={16} color={'black'}>Kenapa harus beli di <Text color={'red.500'}>RYAPP</Text> ?? </Text>
+          </Center>
+          <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={true}>
+          <Box marginLeft={3}>
+          <Image
+                source={require("../assets/1.png")}
+                w="150px"
+                h="200px"
+                alt="Logo"
+                resizeMode="contain"
+            />
+          </Box>
+          <Box marginLeft={3}>
+          <Image
+                source={require("../assets/1.png")}
+                w="150px"
+                h="200px"
+                alt="Logo"
+                resizeMode="contain"
+            />
+          </Box>
+          <Box marginLeft={3}>
+          <Image
+                source={require("../assets/1.png")}
+                w="150px"
+                h="200px"
+                alt="Logo"
+                resizeMode="contain"
+            />
+          </Box>  
+          <Box marginLeft={3}>
+          <Image
+                source={require("../assets/1.png")}
+                w="150px"
+                h="200px"
+                alt="Logo"
+                resizeMode="contain"
+            />
+          </Box>      
+          
+      </ScrollView>
       </Box>
       </Center>
     </VStack>
-    </Box> 
-    
+
     </ScrollView>
     </>
   );
