@@ -30,7 +30,7 @@ const Product = () => {
             <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
               {item.category}
             </Heading>
-            <Text color={'green.600'} bold>{item.Price}</Text>
+            <Text color={'green.600'} bold> {item.Price}</Text>
           </Box>
         </Box>
 
