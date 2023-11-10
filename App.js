@@ -17,6 +17,7 @@ import Pembelian from "./screens/Pembelian";
 import History from "./screens/History";
 import Aboutus from "./screens/AboutUs";
 import Faqs from "./screens/Faq";
+import Register from "./screens/register";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -132,6 +133,10 @@ const App = () => {
           <Stack.Screen
             name="Faq"
             component={Faqs}
+            />
+          <Stack.Screen
+            name="Register"
+            component={Register}
             options={noHead}
           />
         </Stack.Navigator>

@@ -1,9 +1,8 @@
 import * as React from "react";
 import { Box, Text, Heading, VStack, FormControl, Input, Button, HStack, Center, NativeBaseProvider, Image } from "native-base";
 import { useNavigation } from "@react-navigation/native";
-import { TouchableOpacity } from "react-native";
 
-const Login = () => {
+const Register = () => {
   const navigation = useNavigation();
   return <Center w="100%">
       <Box safeArea p="2" py="8" w="90%" maxW="290">
@@ -19,7 +18,7 @@ const Login = () => {
         <Heading size="lg" fontWeight="600" color="coolGray.800" _dark={{
         color: "warmGray.50"
       }}>
-          Welcome 
+          Register Account 
         </Heading>
         <Heading mt="1" _dark={{
         color: "warmGray.200"
@@ -27,21 +26,22 @@ const Login = () => {
           Subur Jaya APP
         </Heading>
 
-        <VStack space={3}>
+        <VStack space={3} mt="5">
           <FormControl>
-            <FormControl.Label><Text color={"black"} bold >Email ID</Text></FormControl.Label>
-            <Input borderColor={"coolGray.500"}/>
+            <FormControl.Label>Name</FormControl.Label>
+            <Input/>
           </FormControl>
           <FormControl>
-          <FormControl.Label><Text color={"black"} bold >Password</Text></FormControl.Label>
-            <Input borderColor={"coolGray.500"} type="password" />
+            <FormControl.Label>Email</FormControl.Label>
+            <Input/>
+          </FormControl>
+          <FormControl>
+            <FormControl.Label>Password</FormControl.Label>
+            <Input type="password" />
           </FormControl>
           <Button mt="2"  onPress={() => navigation.navigate("Home")} backgroundColor={"red.600"}>
-            <Text color={"white"}>Login</Text>
+            <Text color={"white"}>Register</Text>
           </Button>
-          <TouchableOpacity activeOpacity={0.5}
-        onPress={() => navigation.navigate("Register")}><Text fontSize={'xs'} color={"blue.700"}>Tidak Punya Akun</Text>
-        </TouchableOpacity>
           <HStack mt="6" justifyContent="center">
             <Text fontSize="sm" color="coolGray.600" _dark={{
             color: "warmGray.200"
@@ -57,8 +57,9 @@ const Login = () => {
         return (
           <NativeBaseProvider>
             <Center flex={1} px="3">
-                <Login />
+                <Register/>
             </Center>
           </NativeBaseProvider>
         );
     };
+    
