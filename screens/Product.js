@@ -40,7 +40,7 @@ const Product = () => {
 
   return (
     <>
-      <Header title={"RYAPP"} />
+      <Header/>
       <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
       
       <FlatList
