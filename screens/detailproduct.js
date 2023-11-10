@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 const DetailProduct = ({route}) => {
     const { image, title, content, Price, category } = route.params.item;
     const navigation = useNavigation();
+
 return(
     <ScrollView>
     <Center mt={16}>
