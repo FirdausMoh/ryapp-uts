@@ -1,4 +1,4 @@
-import { Heading, Image, Text,  ScrollView, Box,View, Center, VStack, HStack} from "native-base";
+import {  Image, Text,  ScrollView, Box,View, Center, VStack, HStack} from "native-base";
 import { Header } from "../components";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
@@ -15,8 +15,7 @@ const HomeScreen = () => {
         <Image source={require("../assets/baner.jpg")}
         alt="banner"
         w="full"
-        h="200"
-        resizeMode="contain"
+        h="3xs"
         />
       </Box>
       <Box>
@@ -25,7 +24,7 @@ const HomeScreen = () => {
     Apa Yang Anda Cari ?
     </Text>
     <TouchableOpacity onPress={() => navigation.navigate("Product")}>
-    <Text marginTop={'5'} marginLeft={'70px'} marginBottom={5} fontSize={14} color={"green.500"}>
+    <Text mx={130}my={5} fontSize={14} bold color={"green.600"}>
     Lihat Semua
     </Text>
     </TouchableOpacity>
@@ -37,8 +36,8 @@ const HomeScreen = () => {
           <Box marginLeft={3}>
           <Image
                 source={require("../assets/dinding.jpg")}
-                w="100px"
-                h="100px"
+                w="130px"
+                h="130px"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -49,8 +48,8 @@ const HomeScreen = () => {
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/atap.jpg")}
-                w="100px"
-                h="100px"
+                w="130px"
+                h="130px"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -61,8 +60,8 @@ const HomeScreen = () => {
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/cat.jpg")}
-                w="100px"
-                h="100px"
+                w="130px"
+                h="130px"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -73,8 +72,8 @@ const HomeScreen = () => {
           <Box marginLeft={3}>
           <Image
                 source={require ("../assets/lain.jpg")}
-                w="100px"
-                h="100px"
+                w="130px"
+                h="130px"
                 alt="Logo"
                 borderRadius={30}
             />
@@ -85,49 +84,45 @@ const HomeScreen = () => {
       </ScrollView>
       </Box>
       <Center>
-      <Box backgroundColor={'rose.300'}>
+      <Box backgroundColor={'red.600'} w={'480'}>
           <Center marginTop={5} marginBottom={5}>
-            <Text fontWeight={'semibold'} fontSize={16} color={'black'}>Kenapa harus beli di <Text color={'red.500'}>RYAPP</Text> ?? </Text>
-          </Center>
-          <ScrollView marginLeft={'1'} horizontal={true} scrollEnabled={true}>
-          <Box marginLeft={3}>
-          <Image
-                source={require("../assets/1.png")}
-                w="150px"
-                h="200px"
-                alt="Logo"
-                resizeMode="contain"
-            />
-          </Box>
-          <Box marginLeft={3}>
-          <Image
-                source={require("../assets/1.png")}
-                w="150px"
-                h="200px"
-                alt="Logo"
-                resizeMode="contain"
-            />
-          </Box>
-          <Box marginLeft={3}>
-          <Image
-                source={require("../assets/1.png")}
-                w="150px"
-                h="200px"
-                alt="Logo"
-                resizeMode="contain"
-            />
-          </Box>  
-          <Box marginLeft={3}>
-          <Image
-                source={require("../assets/1.png")}
-                w="150px"
-                h="200px"
-                alt="Logo"
-                resizeMode="contain"
-            />
-          </Box>      
+            <Text fontWeight={'medium'} fontSize={16} color={'white'}>Kenapa harus beli di <Text bold >RYAPP</Text> ?? </Text>
           
-      </ScrollView>
+          <VStack mt={5}>
+            <HStack>
+              <Box backgroundColor={"white"} mr={10} mb={5} w={'180px'}h={'180px'} rounded={30}>
+              <Image source={{
+      uri: "https://png.pngtree.com/png-clipart/20220705/original/pngtree-vector-red-toolbox-with-hand-tools-png-image_8334929.png"
+    }} alt="icon" size="sm" borderRadius={90} m={3}/>
+                <Text textAlign={'left'} m={1} fontWeight={"bold"} fontSize={'sm'} color={"gray.700"}>Berbagai produk dan merek bahan material</Text>
+              </Box>
+              <Box backgroundColor={"white"} mr={5} mb={5} w={'180px'}h={'180px'} rounded={30}>
+              <Image source={{
+      uri: "https://i.pinimg.com/736x/2e/f2/f3/2ef2f3289430a49cfbd483bf44dd2f17.jpg"
+    }} alt="icon" size="md" borderRadius={90} m={3}/>
+                <Text textAlign={'left'} m={1} fontWeight={"bold"} fontSize={'sm'} color={"gray.700"}>Penggiriman Cepat</Text>
+              </Box>
+            </HStack>
+          </VStack>
+          <VStack>
+            <HStack>
+            <Box backgroundColor={"white"} mr={10} mb={5} w={'180px'}h={'180px'} rounded={30}>
+              <Image source={{
+      uri: "https://png.pngtree.com/png-clipart/20201208/original/pngtree-24-hour-clock-delivery-service-png-image_5518192.jpg"
+    }} alt="icon" size="sm" borderRadius={90} m={3}/>
+                <Text textAlign={'left'} m={1} fontWeight={"bold"} fontSize={'sm'} color={"gray.700"}>Layanan 24 jam
+
+Bagi Kontraktor dan Vendor</Text>
+              </Box>
+              <Box backgroundColor={"white"} mr={5} mb={5} w={'180px'}h={'180px'} rounded={30}>
+              <Image source={{
+      uri: "https://png.pngtree.com/png-vector/20230328/ourmid/pngtree-best-price-icon-design-vector-png-image_6673126.png"
+    }} alt="icon" size="sm" borderRadius={90} m={3}/>
+                <Text textAlign={'left'} m={1} fontWeight={"bold"} fontSize={'sm'} color={"gray.700"}>Harga Khusus Untuk Akun Bisnis</Text>
+              </Box>
+            </HStack>
+          </VStack>
+          </Center>
       </Box>
       </Center>
     </VStack>

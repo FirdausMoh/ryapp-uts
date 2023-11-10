@@ -10,102 +10,113 @@ const Category = () => {
     <View>
     <Header/>
     </View>
-    <VStack>
-      <ScrollView>
+    <ScrollView>
+      <VStack>
       <Box>
       <Heading ml={5} mb={4}>Kategori Barang</Heading>
       
-      <HStack>
+      <HStack alignItems={'center'} justifyContent={"center"} my={3}>
         <TouchableOpacity
         onPress={() =>
         navigation.navigate("Semen")}>
-          <Box mr={'80px'} ml={'55px'}>
+          <Center>
+          <Box shadow={5} backgroundColor={'white'} p={5} mr={10} borderRadius={30}>
+          <Center>
           <Image
                 source={require ("../assets/semen.jpg")}
-                w="130"
-                h="130"
+                w="140"
+                h="140"
                 alt="Logo"
-                borderRadius={30}
             />
-            <Center>
-            <Text color={"gray.600"} marginTop={1} marginBottom={2} fontSize={18}>Pilihan Semen</Text>
+            <Text color={"gray.600"} my={1} fontSize={18}>Pilihan Semen</Text>
             </Center>
-          </Box>  
+            </Box>
+          </Center>   
         </TouchableOpacity>
         <TouchableOpacity 
         onPress={() =>
-        navigation.navigate("Cat")}>
-          <Box marginLeft={3}>
+        navigation.navigate("Tes")}>
+        <Center>
+          <Box shadow={5} backgroundColor={'white'} p={5} borderRadius={30}>
+          <Center>
           <Image
                 source={require ("../assets/cat.png")}
-                w="130"
-                h="130"
+                w="140"
+                h="140"
                 alt="Logo"
-                borderRadius={30}
             />
-          <Center>
-          <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Pilihan Cat</Text>
+          <Text marginTop={1} color={"gray.600"}  my={1} fontSize={18}>Pilihan Cat</Text>
           </Center> 
-          </Box>  
+          </Box>
+        </Center>   
         </TouchableOpacity>     
     </HStack>
-    <HStack>
+
+    <HStack alignItems={'center'} justifyContent={"center"} my={3} ml={3} >
         <TouchableOpacity
         onPress={() =>
         navigation.navigate("Bata")}>
-          <Box mr={'80px'} ml={'55px'}>
+          <Center>
+          <Box shadow={5} backgroundColor={'white'} p={5} mr={10} borderRadius={30}>
+          <Center>
           <Image
                 source={require ("../assets/bata.webp")}
-                w="130"
-                h="130"
+                w="140"
+                h="140"
                 alt="Logo"
-                borderRadius={30}
             />
-            <Center>
-            <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Pilihan Bata</Text>
+            
+            <Text color={"gray.600"} my={1} fontSize={18}>Pilihan Bata</Text>
             </Center>
-           
-          </Box>  
+            </Box>
+          </Center>   
         </TouchableOpacity>
         <TouchableOpacity 
         onPress={() =>
         navigation.navigate("Galvalum")}>
-          <Box marginLeft={3}>
+        <Center>
+          <Box shadow={5} backgroundColor={'white'} p={5} borderRadius={30}
+          >
+          <Center>
           <Image
                 source={require ("../assets/galvalum.png")}
-                w="130"
-                h="130"
+                w="140"
+                h="140"
                 alt="Logo"
-                borderRadius={30}
             />
-          <Center>
-          <Text marginTop={1} color={"gray.600"}  marginBottom={2} fontSize={18}>Pilihan Galvalum</Text>
+          
+          <Text marginTop={1} color={"gray.600"}  my={1} fontSize={18}>Pilihan Galvalum</Text>
           </Center> 
-          </Box>  
-        </TouchableOpacity>
-      </HStack>  
-    <HStack>
+          </Box>
+        </Center>   
+        </TouchableOpacity>     
+    </HStack>
+
+    <HStack alignItems={'left'} justifyContent={"left"} my={3} ml={10}>
         <TouchableOpacity
         onPress={() =>
         navigation.navigate("Product")}>
-          <Box mr={'80px'} ml={'55px'}>
+          <Center>
+          <Box shadow={5} backgroundColor={'white'} p={5} mr={10} borderRadius={30}>
+          <Center>
           <Image
                 source={require ("../assets/other.png")}
-                w="130"
-                h="130"
+                w="140"
+                h="140"
                 alt="Logo"
-                borderRadius={30}
             />
-            <Center>
-            <Text marginTop={1} color={"gray.600"}  marginBottom={5} fontSize={18}>Semua</Text>
-            </Center>  
-          </Box>  
-        </TouchableOpacity>
-      </HStack>
+            
+            <Text color={"gray.600"} my={1} fontSize={18}> Semua</Text>
+            </Center>
+            </Box>
+          </Center>   
+          </TouchableOpacity>
+    </HStack>
+
     </Box>
-    </ScrollView>
-    
     </VStack>
+    
+    </ScrollView>
     </>
    
     );
