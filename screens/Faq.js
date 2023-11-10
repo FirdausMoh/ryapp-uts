@@ -33,7 +33,7 @@ const Faqs = () => {
 
   return (
     <>
-      <ScreenTop title={"FAQ"} route={"Profile"} />
+      <ScreenTop title={"FAQ"} />
       <Heading  ml={5} mb={4} mt={5} fontSize={20}>Pertanyaan yang Sering Ditanyakan</Heading>
       <FlatList
         data={dataFaq}
