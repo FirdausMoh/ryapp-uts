@@ -29,7 +29,7 @@ const Profile = () => {
       <Box>
         <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
         <TouchableOpacity activeOpacity={0.5}
-        onPress={() => navigation.navigate("Home")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Tentang kami</Text>
+        onPress={() => navigation.navigate("AboutUs")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Tentang kami</Text>
         </TouchableOpacity>
         </Box>
         <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
@@ -40,6 +40,11 @@ const Profile = () => {
         <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
         <TouchableOpacity activeOpacity={0.5}
         onPress={() => navigation.navigate("History")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Catatan Pembelian</Text>
+        </TouchableOpacity>
+        </Box>
+        <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
+        <TouchableOpacity activeOpacity={0.5}
+        onPress={() => navigation.navigate("Faq")}><Text fontSize={'2xl'} fontWeight={"semibold"}>FAQs</Text>
         </TouchableOpacity>
         </Box>
         <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>

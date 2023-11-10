@@ -1,3 +1,4 @@
 import Header from "./header";
+import ScreenTop from "./ScreenTop";
 
-export {Header};
+export {Header, ScreenTop};
