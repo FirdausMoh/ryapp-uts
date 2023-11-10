@@ -13,7 +13,7 @@ import Cat from "./screens/Cat";
 import Galvalum from "./screens/Galvalum";
 import Bata from "./screens/Bata";
 import Product from "./screens/Product";
-import Register from "./screens/Register";
+// import Register from "./screens/register";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -110,11 +110,11 @@ const App = () => {
             component={Product}
             options={noHead}
           />
-          <Stack.Screen
+          {/* <Stack.Screen
             name="Register"
             component={Register}
             options={noHead}
-          />
+          /> */}
         </Stack.Navigator>
         
       </NavigationContainer>

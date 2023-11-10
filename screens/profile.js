@@ -23,8 +23,8 @@ const Profile = () => {
       </Center>
       <Box ml={5}>
         <Center>
-        <Text fontSize={24} fontWeight={'medium'}> H. Miftah Syukron</Text>
-        <Text fontSize={24} fontWeight={'medium'} color={"red.400"}> miftah@gmail.com</Text>
+        <Text fontSize={24} fontWeight={'medium'}> H. Miftah</Text>
+        <Text fontSize={24} fontWeight={'medium'} color={"red.400"}> miftahhhh@gmail.com</Text>
         </Center>
       <Box>
         <Center>

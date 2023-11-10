@@ -22,7 +22,7 @@ const Header = ({ title, withBack = false }) => {
               alt="Logo"
               resizeMode="contain"
             />
-            <Heading color={"red.500"} marginLeft={10}>
+            <Heading color={"red.500"} marginLeft={300}>
               {title}
             </Heading>
           </HStack>
@@ -33,6 +33,7 @@ const Header = ({ title, withBack = false }) => {
           >
             <Text color={"white"}>Login</Text>
           </Button>
+         
         </HStack>
       </Box>
     </SafeAreaView>
