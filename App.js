@@ -15,6 +15,7 @@ import Product from "./screens/Product";
 import DetailProduct from "./screens/detailproduct";
 import Pembelian from "./screens/Pembelian";
 import History from "./screens/History";
+import Register from "./screens/Register";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -120,6 +121,11 @@ const App = () => {
           <Stack.Screen
             name="History"
             component={History}
+            options={noHead}
+          />
+          <Stack.Screen
+            name="Register"
+            component={Register}
             options={noHead}
           />
         </Stack.Navigator>

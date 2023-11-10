@@ -12,7 +12,7 @@ const Category = () => {
     </View>
     <ScrollView>
       <VStack>
-      <Box>
+      <Box mt={5}>
       <Heading ml={5} mb={4}>Kategori Barang</Heading>
       
       <HStack alignItems={'center'} justifyContent={"center"} my={3}>
