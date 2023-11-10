@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box, Text, Heading, VStack, FormControl, Input, Button, HStack, Center, NativeBaseProvider, Image } from "native-base";
 import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native";
 
 const Login = () => {
   const navigation = useNavigation();

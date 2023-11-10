@@ -1,11 +1,11 @@
-import { Heading, Center, Text, Box, Image, Button, HStack, Divider,Input,FormControl } from "native-base";
+import { Heading, Center, Text, Box, Image, Button, HStack, Divider,Input,FormControl,FlatList, ScrollView } from "native-base";
 import { useNavigation } from "@react-navigation/native";
 
 const DetailProduct = ({route}) => {
     const { image, title, content, Price, category } = route.params.item;
     const navigation = useNavigation();
 return(
-    <>
+    <ScrollView>
     <Center mt={16}>
     <Box m={10} shadow={3} backgroundColor={"white"} >
     <Center mt={30}>
@@ -56,7 +56,7 @@ return(
         </Box> 
     </Box>
     </Center>        
-    </>
+    </ScrollView>
 );
 };
 export default DetailProduct;
