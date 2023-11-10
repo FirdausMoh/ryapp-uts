@@ -2,7 +2,7 @@ import { Heading, Image, Text, FlatList, Box } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../components";
-import data from "../dataProduk";
+import data from "../data";
 
 const Product = () => {
   const navigation = useNavigation();
@@ -24,13 +24,13 @@ const Product = () => {
           </Box>
 
           <Box flex={4}>
-          <Heading lineHeight={"3xl"} fontSize={"md"}>
-              {item.title}
-            </Heading>
-            <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
-              {item.category}
-            </Heading>
-            <Text color={'green.600'} bold>{item.Price}</Text>
+          <Heading lineHeight={"3xl"} fontSize={"sm"}>
+             Nama Produk : {item.title}
+          </Heading>
+          <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
+             Jumlah  Beli : {item.jumlah}
+          </Heading>
+            <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}> Harga : {item.Price}</Heading>
           </Box>
         </Box>
 
@@ -41,7 +41,7 @@ const Product = () => {
   return (
     <>
       <Header title={"RYAPP"} />
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
+      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Catatan Pembelian</Text>
       
       <FlatList
         data={data}

@@ -1,11 +1,20 @@
 import * as React from "react";
-import { Box, Text, Heading, VStack, FormControl, Input, Button, HStack, Center, NativeBaseProvider } from "native-base";
+import { Box, Text, Heading, VStack, FormControl, Input, Button, HStack, Center, NativeBaseProvider, Image } from "native-base";
 import { useNavigation } from "@react-navigation/native";
 
 const Login = () => {
   const navigation = useNavigation();
   return <Center w="100%">
       <Box safeArea p="2" py="8" w="90%" maxW="290">
+      <Center mb={10}>
+      <Image
+              source={require("../assets/RYPOS.png")}
+              w="110px"
+              h="80px"
+              alt="Logo"
+              resizeMode="cover"
+            />
+      </Center>
         <Heading size="lg" fontWeight="600" color="coolGray.800" _dark={{
         color: "warmGray.50"
       }}>
@@ -19,12 +28,12 @@ const Login = () => {
 
         <VStack space={3} mt="5">
           <FormControl>
-            <FormControl.Label>Email ID</FormControl.Label>
-            <Input/>
+            <FormControl.Label><Text color={"black"} bold >Email ID</Text></FormControl.Label>
+            <Input borderColor={"coolGray.500"}/>
           </FormControl>
           <FormControl>
-            <FormControl.Label>Password</FormControl.Label>
-            <Input type="password" />
+          <FormControl.Label><Text color={"black"} bold >Password</Text></FormControl.Label>
+            <Input borderColor={"coolGray.500"} type="password" />
           </FormControl>
           <Button mt="2"  onPress={() => navigation.navigate("Home")} backgroundColor={"red.600"}>
             <Text color={"white"}>Login</Text>

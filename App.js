@@ -5,7 +5,6 @@ import { NativeBaseProvider, Text, } from "native-base";
 import { Ionicons } from '@expo/vector-icons';
 import Login from "./screens/login";
 import Profile from "./screens/profile"
-import Pembelian from "./screens/form-pembelian";
 import HomeScreen from "./screens/home";
 import Category from "./screens/category";
 import Semen from "./screens/Semen";
@@ -13,7 +12,9 @@ import Cat from "./screens/Cat";
 import Galvalum from "./screens/Galvalum";
 import Bata from "./screens/Bata";
 import Product from "./screens/Product";
-import Register from "./screens/Register";
+import DetailProduct from "./screens/detailproduct";
+import Pembelian from "./screens/Pembelian";
+import History from "./screens/History";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -32,9 +33,6 @@ const Tabs = () => {
           switch (route.name) {
             case "Home":
               iconName = "home-outline";
-              break;
-            case "Pembelian":
-              iconName = "share";
               break;
             case "Profile":
               iconName = "person-circle-outline";
@@ -67,7 +65,6 @@ const Tabs = () => {
     >
       <Tab.Screen name="Home" component={HomeScreen} options={noHead} />
       <Tab.Screen name="Category" component={Category} options={noHead} />
-      <Tab.Screen name="Pembelian" component={Pembelian} options={noHead} />
       <Tab.Screen name="Profile" component={Profile} options={noHead} />
 
     </Tab.Navigator>
@@ -110,9 +107,19 @@ const App = () => {
             component={Product}
             options={noHead}
           />
+            <Stack.Screen
+            name="Detail Product"
+            component={DetailProduct}
+            options={noHead}
+          />
+           <Stack.Screen
+            name="Pembelian"
+            component={Pembelian}
+            options={noHead}
+          />
           <Stack.Screen
-            name="Register"
-            component={Register}
+            name="History"
+            component={History}
             options={noHead}
           />
         </Stack.Navigator>
