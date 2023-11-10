@@ -1,5 +1,4 @@
-import { Heading, Image, Text, FlatList } from "native-base";
-import { Box, ScrollView } from "native-base";
+import { Heading, Image, Text, FlatList, Box } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../components";
@@ -11,12 +10,12 @@ const Product = () => {
     return (
       <TouchableOpacity
         activeOpacity={0.5}
-        onPress={() => navigation.navigate("", { item: item })}
+        onPress={() => navigation.navigate("Detail Product", { item: item })}
       >
         <Box
           p={"4"}
           borderBottomColor={"coolGray.300"}
-          borderBottomWidth={1}
+        borderBottomWidth={1}
           flexDirection="row"
           flex={1}
         >
@@ -31,7 +30,7 @@ const Product = () => {
             <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
               {item.category}
             </Heading>
-            <Text color={'green.600'}>{item.Price}</Text>
+            <Text color={'green.600'} bold>{item.Price}</Text>
           </Box>
         </Box>
 

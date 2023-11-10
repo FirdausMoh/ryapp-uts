@@ -1,40 +1,52 @@
 import { Heading, Center,Image, Box,Text, VStack, Button} from "native-base";
-import { Header } from "../components";
 import { TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
 
 const Profile = () => {
   const navigation = useNavigation();
   return (
     <>
-    <VStack mt={20} >
-      <Box>
-      <Center>
+    <VStack >
+      <Box backgroundColor={'red.600'}>
       <Image
           source={require ("../assets/pp.jpg")}
-          w="140"
-          h="140"
+          w="90"
+          h="90"
           alt="Logo"
           borderRadius={100}
           resizeMode="contain"
-          mb={5}
+          m={5}
+          borderWidth={5}
+          borderColor={'white'}
             />
-      </Center>
       <Box ml={5}>
-        <Center>
-        <Text fontSize={24} fontWeight={'medium'}> H. Miftah</Text>
-        <Text fontSize={24} fontWeight={'medium'} color={"red.400"}> miftahhhh@gmail.com</Text>
-        </Center>
+        <Text fontSize={24} fontWeight={'semibold'} color={"white"}> Miftah Syukron</Text>
+        <Box backgroundColor={'yellow.500'} w={'115px'} borderRadius={30} mb={'20px'}>
+        <Text fontSize={14}  color={"white"} textAlign={"center"}>Member VIP</Text>
+        </Box>  
+      </Box>
+      </Box>
       <Box>
-        <Center>
-        <Button mt="2" w={100}
-            onPress={() => navigation.navigate("Login")}
-            backgroundColor={"red.600"}>Logout</Button>
-        </Center>
-        
-      </Box>
-      </Box>
+        <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
+        <TouchableOpacity activeOpacity={0.5}
+        onPress={() => navigation.navigate("Home")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Tentang kami</Text>
+        </TouchableOpacity>
+        </Box>
+        <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
+        <TouchableOpacity activeOpacity={0.5}
+        onPress={() => navigation.navigate("Product")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Produk</Text>
+        </TouchableOpacity>
+        </Box>
+        <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
+        <TouchableOpacity activeOpacity={0.5}
+        onPress={() => navigation.navigate("History")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Catatan Pembelian</Text>
+        </TouchableOpacity>
+        </Box>
+        <Box borderBottomWidth={1} borderColor={"gray.300"} p={3}>
+        <TouchableOpacity activeOpacity={0.5}
+        onPress={() => navigation.navigate("Login")}><Text fontSize={'2xl'} fontWeight={"semibold"}>Keluar</Text>
+        </TouchableOpacity>
+        </Box>
       </Box>
     </VStack>
       

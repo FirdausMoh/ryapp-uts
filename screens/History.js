@@ -1,11 +1,10 @@
-import { Heading, Image, Text, FlatList } from "native-base";
-import { Box, ScrollView } from "native-base";
+import { Heading, Image, Text, FlatList, Box } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../components";
-import data from "../dataGalvalum";
+import data from "../data";
 
-const Galvalum = () => {
+const Product = () => {
   const navigation = useNavigation();
   const renderitem = ({ item }) => {
     return (
@@ -16,7 +15,7 @@ const Galvalum = () => {
         <Box
           p={"4"}
           borderBottomColor={"coolGray.300"}
-          borderBottomWidth={1}
+        borderBottomWidth={1}
           flexDirection="row"
           flex={1}
         >
@@ -25,13 +24,13 @@ const Galvalum = () => {
           </Box>
 
           <Box flex={4}>
-          <Heading lineHeight={"3xl"} fontSize={"md"}>
-              {item.title}
-            </Heading>
-            <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
-              {item.category}
-            </Heading>
-            <Text color={'green.600'}>{item.Price}</Text>
+          <Heading lineHeight={"3xl"} fontSize={"sm"}>
+             Nama Produk : {item.title}
+          </Heading>
+          <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
+             Jumlah  Beli : {item.jumlah}
+          </Heading>
+            <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}> Harga : {item.Price}</Heading>
           </Box>
         </Box>
 
@@ -41,8 +40,8 @@ const Galvalum = () => {
 
   return (
     <>
-      <Header/>
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Galvalum</Text>
+      <Header title={"RYAPP"} />
+      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Catatan Pembelian</Text>
       
       <FlatList
         data={data}
@@ -54,5 +53,5 @@ const Galvalum = () => {
   );
 };
 
-export default Galvalum;
+export default Product;
 

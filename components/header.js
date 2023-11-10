@@ -12,17 +12,17 @@ const Header = ({ title, withBack = false }) => {
   return (
     <SafeAreaView>
       <StatusBar barStyle="light" backgroundColor={trueGray900} />
-      <Box bg={"white"} p={"4"}>
+      <Box bg={"white"} p={"4"} shadow={3}>
       <HStack justifyContent="space-between" alignItems="center">
           <HStack alignItems="center">
             <Image
-              source={require("../assets/RYPOS.png")}
-              w="16"
-              h="12"
+              source={require("../assets/JAAA.png")}
+              w="100px"
+              h="40px"
               alt="Logo"
-              resizeMode="contain"
+              resizeMode="cover"
             />
-            <Heading color={"red.500"} marginLeft={300}>
+            <Heading color={"red.500"} marginLeft={180}>
               {title}
             </Heading>
           </HStack>
@@ -33,7 +33,6 @@ const Header = ({ title, withBack = false }) => {
           >
             <Text color={"white"}>Login</Text>
           </Button>
-         
         </HStack>
       </Box>
     </SafeAreaView>
@@ -41,9 +40,3 @@ const Header = ({ title, withBack = false }) => {
 };
 
 export default Header;
-
-
-
-
-
-
