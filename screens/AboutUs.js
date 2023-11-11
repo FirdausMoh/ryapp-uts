@@ -16,7 +16,7 @@ const Aboutus = () => {
       <Box>
       <Center>
       <Image
-          source={require ("../assets/RYPOS.png")}
+          source={require ("../assets/JAAA.png")}
           w="140"
           h="140"
           alt="Logo"
@@ -80,7 +80,7 @@ const Aboutus = () => {
       <Heading  mb={4} mt={5} fontSize={20}>Kontak Kami</Heading>
       <HStack mb={5} backgroundColor={"white"} rounded={"lg"} shadow={2}>
       <Image
-          source={require ("../assets/RYPOS.png")}
+          source={require ("../assets/JAAA.png")}
           w="140"
           h="140"
           alt="Logo"

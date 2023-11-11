@@ -41,8 +41,7 @@ const Semen = () => {
 
   return (
     <>
-      <Header title={"RYAPP"} />
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
+      <ScreenTop title={"Semen"} navigation={"Category"}/>
       
       <FlatList
         data={dataSem}
