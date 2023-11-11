@@ -2,8 +2,9 @@ import { Heading, Image, Text, FlatList } from "native-base";
 import { Box, ScrollView } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Header, ScreenTop } from "../components";
+import {ScreenTop } from "../components";
 import dataSem from "../dataSemen";
+import HeaderCategory from "../components/HeaderCategory";
 
 const Semen = () => {
   const navigation = useNavigation();

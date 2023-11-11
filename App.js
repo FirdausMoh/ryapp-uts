@@ -18,7 +18,7 @@ import History from "./screens/History";
 import Register from "./screens/register";
 import Aboutus from "./screens/AboutUs";
 import Faqs from "./screens/Faq";
-
+import TransaksiBerhasil from "./screens/TransaksiBerhasil";
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -139,6 +139,11 @@ const App = () => {
           <Stack.Screen
             name="Register"
             component={Register}
+            options={noHead}
+          />
+        <Stack.Screen
+            name="TransaksiBerhasil"
+            component={TransaksiBerhasil}
             options={noHead}
           />
         </Stack.Navigator>
