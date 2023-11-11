@@ -3,6 +3,7 @@ import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../components";
 import data from "../dataProduk";
+import HeaderCategory from "../components/HeaderCategory";
 
 const Product = () => {
   const navigation = useNavigation();
@@ -30,7 +31,7 @@ const Product = () => {
             <Heading lineHeight={"3xl"} fontSize={"sm"}color={"gray.500"}>
               {item.category}
             </Heading>
-            <Text color={'green.600'} bold> {item.Price}</Text>
+            <Heading color={'green.600'} bold fontSize={'sm'}> {item.Price}</Heading>
           </Box>
         </Box>
 
@@ -40,7 +41,7 @@ const Product = () => {
 
   return (
     <>
-      <Header/>
+      <HeaderCategory title={'Daftar Produk'}/>
       <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
       
       <FlatList

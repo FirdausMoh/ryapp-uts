@@ -2,8 +2,9 @@ import { Heading, Image, Text, FlatList } from "native-base";
 import { Box, ScrollView } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Header, ScreenTop } from "../components";
+import {ScreenTop } from "../components";
 import dataSem from "../dataSemen";
+import HeaderCategory from "../components/HeaderCategory";
 
 const Semen = () => {
   const navigation = useNavigation();
@@ -41,8 +42,8 @@ const Semen = () => {
 
   return (
     <>
-      <Header title={"RYAPP"} />
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
+      <HeaderCategory title={'Daftar Produk'}/>
+      <Text fontSize={24} fontWeight="semibold" my={5} marginLeft={2}>Produk Semen</Text>
       
       <FlatList
         data={dataSem}

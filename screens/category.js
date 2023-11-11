@@ -35,7 +35,7 @@ const Category = () => {
         </TouchableOpacity>
         <TouchableOpacity 
         onPress={() =>
-        navigation.navigate("Tes")}>
+        navigation.navigate("Cat")}>
         <Center>
           <Box shadow={5} backgroundColor={'white'} p={5} borderRadius={30}>
           <Center>
