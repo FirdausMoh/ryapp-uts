@@ -3,7 +3,6 @@ import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Header, ScreenTop } from "../components";
 import data from "../dataProduk";
-import HeaderCategory from "../components/HeaderCategory";
 
 const Product = () => {
   const navigation = useNavigation();
@@ -43,7 +42,6 @@ const Product = () => {
     <>
 
       <ScreenTop title={"Produk"} />
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
       
       <FlatList
         data={data}

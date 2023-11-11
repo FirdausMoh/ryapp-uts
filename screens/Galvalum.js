@@ -2,9 +2,8 @@ import { Heading, Image, Text, FlatList } from "native-base";
 import { Box, ScrollView } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Header } from "../components";
 import data from "../dataGalvalum";
-import HeaderCategory from "../components/HeaderCategory";
+import { Header, ScreenTop } from "../components";
 
 const Galvalum = () => {
   const navigation = useNavigation();
@@ -42,7 +41,7 @@ const Galvalum = () => {
 
   return (
     <>
-      <ScreenTop title={"Galvalum"} navigation={"Category"}/>
+      <ScreenTop title={"Galvalum"} />
       
       <FlatList
         data={data}

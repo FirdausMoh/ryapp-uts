@@ -21,10 +21,10 @@ const HomeScreen = () => {
       <Box>
       <HStack>
       <Text marginTop={'3.5'} marginLeft={3} marginBottom={5} fontSize={20}>
-    Apa Yang Anda Cari ?
+    Apa Yang Anda Butuhkan ?
     </Text>
     <TouchableOpacity onPress={() => navigation.navigate("Product")}>
-    <Text mx={130}my={5} fontSize={14} bold color={"green.600"}>
+    <Text mx={'70px'}my={5} fontSize={14} bold color={"green.600"}>
     Lihat Semua
     </Text>
     </TouchableOpacity>
@@ -84,9 +84,9 @@ const HomeScreen = () => {
       </ScrollView>
       </Box>
       <Center>
-      <Box backgroundColor={'red.600'} w={'480'}>
+      <Box backgroundColor={'gray.300'} w={'480'}>
           <Center marginTop={5} marginBottom={5}>
-            <Text fontWeight={'medium'} fontSize={16} color={'white'}>Kenapa harus beli di <Text bold >RYAPP</Text> ?? </Text>
+            <Text fontWeight={'bold'} fontSize={16} color={'black'}>Kenapa harus beli di <Text bold >RYAPP</Text> ?? </Text>
           
           <VStack mt={5}>
             <HStack>

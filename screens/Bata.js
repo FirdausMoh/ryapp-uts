@@ -2,7 +2,7 @@ import { Heading, Image, Text, FlatList } from "native-base";
 import { Box, ScrollView } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Header } from "../components";
+import { Header, ScreenTop } from "../components";
 import data from "../dataBata";
 
 
@@ -42,8 +42,7 @@ const Bata = () => {
 
   return (
     <>
-      <Header/>
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Bata</Text>
+      <ScreenTop title={'Bata'}/>
       
       <FlatList
         data={data}
