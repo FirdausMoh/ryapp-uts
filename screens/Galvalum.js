@@ -42,8 +42,7 @@ const Galvalum = () => {
 
   return (
     <>
-      <HeaderCategory title={'Daftar Produk'}/>
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Galvalum</Text>
+      <ScreenTop title={"Galvalum"} navigation={"Category"}/>
       
       <FlatList
         data={data}

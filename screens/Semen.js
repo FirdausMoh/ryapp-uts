@@ -42,8 +42,7 @@ const Semen = () => {
 
   return (
     <>
-      <HeaderCategory title={'Daftar Produk'}/>
-      <Text fontSize={24} fontWeight="semibold" my={5} marginLeft={2}>Produk Semen</Text>
+      <ScreenTop title={"Semen"} navigation={"Category"}/>
       
       <FlatList
         data={dataSem}
