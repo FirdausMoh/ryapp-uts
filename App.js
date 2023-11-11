@@ -134,6 +134,7 @@ const App = () => {
           <Stack.Screen
             name="Faq"
             component={Faqs}
+            options={noHead}
             />
           <Stack.Screen
             name="Register"

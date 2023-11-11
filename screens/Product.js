@@ -1,7 +1,7 @@
 import { Heading, Image, Text, FlatList, Box } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Header } from "../components";
+import { Header, ScreenTop } from "../components";
 import data from "../dataProduk";
 import HeaderCategory from "../components/HeaderCategory";
 
@@ -41,7 +41,9 @@ const Product = () => {
 
   return (
     <>
-      <ScreenTop title={"SemuaProduct"} navigation={"Category"}/>
+
+      <ScreenTop title={"Produk"} />
+      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Semua Produk</Text>
       
       <FlatList
         data={data}

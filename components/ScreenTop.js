@@ -15,7 +15,7 @@ const ScreenTop = ({ title, withBack = false }) => {
       <Box bg={"white"} p={"4"}>
       <HStack justifyContent="space-between" alignItems="center">
           <HStack alignItems="center">
-          <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Box mr={10}>
             <Ionicons name="arrow-back"  size={40} color="black"/>
             </Box>
