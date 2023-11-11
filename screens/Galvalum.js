@@ -4,6 +4,7 @@ import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../components";
 import data from "../dataGalvalum";
+import HeaderCategory from "../components/HeaderCategory";
 
 const Galvalum = () => {
   const navigation = useNavigation();
@@ -41,8 +42,7 @@ const Galvalum = () => {
 
   return (
     <>
-      <Header/>
-      <Text fontSize={24} fontWeight="semibold" marginBottom={5} marginLeft={2}>Galvalum</Text>
+      <ScreenTop title={"Galvalum"} navigation={"Category"}/>
       
       <FlatList
         data={data}
