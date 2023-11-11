@@ -15,7 +15,10 @@ import Product from "./screens/Product";
 import DetailProduct from "./screens/detailproduct";
 import Pembelian from "./screens/Pembelian";
 import History from "./screens/History";
-import Register from "./screens/egister";
+import Register from "./screens/register";
+import Aboutus from "./screens/AboutUs";
+import Faqs from "./screens/Faq";
+
 Ionicons.loadFont();
 
 // Navigator Declaration
