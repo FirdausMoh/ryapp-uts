@@ -17,8 +17,9 @@ import Pembelian from "./screens/Pembelian";
 import History from "./screens/History";
 import Register from "./screens/register";
 import Aboutus from "./screens/AboutUs";
-import Faqs from "./screens/Faq";
+import Faqs from "./screens/Faq"
 import TransaksiBerhasil from "./screens/TransaksiBerhasil";
+
 Ionicons.loadFont();
 
 // Navigator Declaration
@@ -141,7 +142,7 @@ const App = () => {
             component={Register}
             options={noHead}
           />
-        <Stack.Screen
+          <Stack.Screen
             name="TransaksiBerhasil"
             component={TransaksiBerhasil}
             options={noHead}
